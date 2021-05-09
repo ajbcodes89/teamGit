@@ -9,6 +9,7 @@ export default function NavBar() {
                 <div><Link to="/">Home</Link></div>
                 <div><Link to="/coordinates">Coordinates</Link></div>
                 <div><Link to="/nasa">Nasa</Link></div>
+                <div><Link to="/weather">Weather</Link></div>
                 
     
             </ul>
