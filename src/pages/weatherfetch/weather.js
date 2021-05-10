@@ -39,9 +39,9 @@ const Weather = (props) => {
         
         <CardBody>
           <CardTitle tag="h5">Your local Weather</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
+          
           <CardText>It is currently {results} degrees with {description}.</CardText>
-          <Button onClick={toggleUnit}>Click for Farenheit/Celsius</Button>
+          <Button onClick={toggleUnit} className="weatherButton">Click for Farenheit/Celsius</Button>
         </CardBody>
       </Card>
             </div>

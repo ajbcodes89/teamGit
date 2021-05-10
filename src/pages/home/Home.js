@@ -14,12 +14,12 @@ const Home = () => {
             <Container className="body">
               
       <Row>
-        <Col>Johnny Go Find</Col>
+        <Col className="title">Johnny Go Find</Col>
       </Row>
 
       <Row className="geoButtonPosition">
         
-        <Button color="primary" size="lg" className="geoButton" disabled>Primary button</Button>{' '}
+        <Button color="primary" size="lg" className="geoButton" >Primary button</Button>{' '}
        
 
       </Row>
