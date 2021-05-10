@@ -8,13 +8,15 @@ import {
 
 // const apiKey = process.env.REACT_APP_WEATHER_KEY;
 
-const Weather = () => {
+const Weather = (props) => {
+    const lat = "39.95559";
+    const lon = "-86.01387";
     const [results, setResults] = useState('');
     const [description, setDescription] = useState('');
     const [unit, setUnit] = useState('imperial');
 
     const fetchResults = () => {
-        let url =`https://api.openweathermap.org/data/2.5/weather?lat=41.0748313&lon=-85.3032709&appid=ff8e85625157907ecd6b6992eba58421&units=${unit}`;
+        let url =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ff8e85625157907ecd6b6992eba58421&units=${unit}`;
 
         fetch(url)
             .then(res => res.json())
