@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
 
-
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
   maximumAge: 0,
 };
+
 function success(pos) {
   var crd = pos.coords;
   console.log("Your current position is:");
@@ -14,21 +14,7 @@ function success(pos) {
   console.log(`Longitude: ${crd.longitude}`);
   console.log(`More or less ${crd.accuracy} meters.`);
   console.log(pos);
-
-/**************  NASA URL ***********/
-
-
-
-const nasa_url = 'https://api.nasa.gov/planetary/earth/imagery'
-const long = `lon=${crd.longitude}`
-const lat = `lat=${crd.latitude}`;
-const date = "date=2013-05-01"
-const apiKey = process.env.REACT_APP_NASA_KEY;
-const baseUrl = `${nasa_url}?${lat}&${long}&dim=.18&${date}&api_key=${apiKey}`
-console.log(baseUrl);
 }
-
-/************************************/
 
 function errors(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
