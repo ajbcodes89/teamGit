@@ -33,8 +33,8 @@ const Weather = () => {
 
     return (
         <div className ="weather">
-             <Card>
-        <CardImg top width="100%" src="#" alt="Card image cap" />
+             <Card className="cardContainer">
+        
         <CardBody>
           <CardTitle tag="h5">Your local Weather</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>

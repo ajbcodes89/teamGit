@@ -4,10 +4,9 @@ import React from 'react';
 import  { BrowserRouter, Route } from 'react-router-dom';
 
 
-
-import Nasa from "./nasaFetch/Nasa";
-import Coordinates from "./nasaFetch/Coordinates";
+import Home from "../home/Home";
 import Weather from "../weatherfetch/weather";
+
 
 
 
@@ -18,9 +17,7 @@ function App() {
     <BrowserRouter>
 
       <div>
-          
-          <Route component={ Nasa } path="/nasa" exact />
-          <Route component={ Coordinates} path="/coordinates" />
+          <Route component={ Home } path="/" exact />
           <Route component={ Weather } path="/weather" />
       </div>
 
