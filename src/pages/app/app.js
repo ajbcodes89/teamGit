@@ -1,11 +1,16 @@
+import "./App.scss";
+
 import React from 'react';
 import  { BrowserRouter, Route } from 'react-router-dom';
-import Home from "./components/Home";
-import Nasa from "./components/Nasa";
-import Coordinates from "./components/Coordinates";
 
 
-import './App.css';
+import Home from "../home/Home";
+import Weather from "../weatherfetch/weather";
+import Nasa from "../nasaFetch/Nasa";
+
+
+
+
 
 function App() {
   return (
@@ -13,9 +18,10 @@ function App() {
 
       <div>
           <Route component={ Home } path="/" exact />
-          <Route component={ Nasa } path="/nasa" exact />
-          <Route component={ Coordinates} path="/coordinates" />
+          <Route component={ Weather } path="/weather" />
+          <Route component={ Nasa } path="/Nasa" />
       </div>
+
       
     </BrowserRouter>
    

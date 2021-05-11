@@ -9,7 +9,6 @@ export default function NavBar() {
                 <div><Link to="/">Home</Link></div>
                 <button><Link to="/coordinates">Get Location</Link></button>
                 <div><Link to="/nasa">Nasa</Link></div>
-
             </ul>
         </div>
     )
