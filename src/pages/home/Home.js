@@ -2,6 +2,7 @@ import "./home.scss";
 
 import React from "react";
 import Weather from "../weatherfetch/weather";
+import Nasa from "../nasaFetch/Nasa";
 
 
 import { Container, Row, Col, Button} from 'reactstrap';
@@ -26,7 +27,7 @@ const Home = () => {
       
       <Row className="cards">
         <Col xs={{ size: '3', offset: 1 }}> <Weather /></Col>
-        <Col xs={{ size: '3', offset: 1 }}> <Weather /></Col>
+        <Col xs={{ size: '3', offset: 1 }}> <Nasa /></Col>
         <Col xs={{ size: '3', offset: 1 }}> <Weather /></Col>
       </Row>
       

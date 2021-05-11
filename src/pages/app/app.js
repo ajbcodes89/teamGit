@@ -6,11 +6,11 @@ import  { BrowserRouter, Route } from 'react-router-dom';
 
 import Home from "../home/Home";
 import Weather from "../weatherfetch/weather";
+import Nasa from "../nasaFetch/Nasa";
 
 
 
 
-import './App.scss';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <div>
           <Route component={ Home } path="/" exact />
           <Route component={ Weather } path="/weather" />
+          <Route component={ Nasa } path="/Nasa" />
       </div>
 
       
