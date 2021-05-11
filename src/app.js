@@ -6,32 +6,19 @@ import  { BrowserRouter, Route } from 'react-router-dom';
 
 import Home from "./components/home/Home";
 import Weather from "./components/weatherfetch/weather";
-import Location from "./components/location/Location";
-
+import Nasa from "./components/nasaFetch/Nasa";
+// import Yelp from "./components/yelpFetch/Yelp";
 
 
 function App() {
-  const [latitude, setLatitude] = useState()
-  const [longitude, setLongitude] = useState()
-  useEffect(()=>{
-    navigator.geolocation.getCurrentPosition((position) => {
-      setLatitude(position.coords.latitude);
-      setLongitude(position.coords.longitude);
-    })
-  },[])
-
-
-
-
-
   return (
     <BrowserRouter>
 
       <div>
-         
           <Route component={ Home } path="/" exact />
           <Route component={ Weather } path="/weather" />
-          <Route component={ Location } path="/location" />
+          <Route component={ Nasa } path="/Nasa" />
+          {/* <Route component={ Yelp } path="/Yelp" /> */}
       </div>
 
       

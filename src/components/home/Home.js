@@ -2,7 +2,9 @@ import "./home.scss";
 
 import React from "react";
 import Weather from "../weatherfetch/weather";
-import Location from "../location/Location";
+import Nasa from "../nasaFetch/Nasa";
+import Yelp from "../yelpFetch/Yelp";
+
 
 import { Container, Row, Col, Button} from 'reactstrap';
 
@@ -24,9 +26,9 @@ const Home = () => {
          
       
       <Row className="cards">
-        <Col xs={{ size: '3', offset: 1 }}className="cardbox"> <Weather /></Col>
-        <Col xs={{ size: '3', offset: 1 }}className="cardbox"> <Weather /></Col>
-        <Col xs={{ size: '3', offset: 1 }}className="cardbox"> <Weather /></Col>
+        <Col xs={{ size: '3', offset: 1 }}> <Weather /></Col>
+        <Col xs={{ size: '3', offset: 1 }}> <Nasa /></Col>
+        <Col xs={{ size: '3', offset: 1 }}> <Yelp /></Col>
       </Row>
       
     </Container>
