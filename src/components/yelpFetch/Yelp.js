@@ -43,11 +43,8 @@ const Yelp = () => {
 
     
         return (
-
-        <div className="main">
-            <div className="mainDiv">
                 <div className="yelp-card">
-                    <Card>
+                    <Card className="cardcontainerYelp">
                         {/* <CardImg top width="100%" src="#" alt="Card image cap" /> */}
                         <CardBody>
                             <CardTitle tag="h5">Nearby Restaurants</CardTitle>
@@ -59,8 +56,7 @@ const Yelp = () => {
                         </CardBody>
                     </Card>
                 </div>
-            </div>
-        </div>
+           
     )
 };
 
