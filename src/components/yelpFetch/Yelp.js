@@ -43,24 +43,20 @@ const Yelp = () => {
 
     
         return (
-
-        <div className="main">
-            <div className="mainDiv">
                 <div className="yelp-card">
-                    <Card>
+                    <Card className="cardcontainerYelp">
                         {/* <CardImg top width="100%" src="#" alt="Card image cap" /> */}
                         <CardBody>
                             <CardTitle tag="h5">Nearby Restaurants</CardTitle>
                             <CardSubtitle tag="h6" className="mb-2 text-muted">Check Your Fridge</CardSubtitle>
                             <CardText>
-                        Learn to Cook{json.businesses.name}
+                        {/* Learn to Cook{json.businesses.name} */}
                             </CardText>
                             {/* <Button onClick={toggleUnit}>Click for Farenheit/Celsius</Button> */}
                         </CardBody>
                     </Card>
                 </div>
-            </div>
-        </div>
+           
     )
 };
 
