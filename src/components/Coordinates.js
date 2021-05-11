@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import NavBar from "../../../components/NavBar";
+import React, { useState } from "react";
+import { Button } from 'reactstrap';
+
 
 
 var options = {
@@ -59,9 +60,10 @@ export default class GeoLocation extends Component {
 
   render() {
     return(
-     
-        <NavBar />
-      
+     <div className="geolocation">
+     <Button color="primary" size="lg" className="geoButton" >Your Location</Button>{' '}
+     </div>
+        
           
         
   
